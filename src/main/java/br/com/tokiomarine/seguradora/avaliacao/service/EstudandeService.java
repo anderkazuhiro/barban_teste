@@ -1,18 +1,21 @@
-package br.com.tokiomarine.seguradora.avaliacao.service;
+package br.com.tokiomarine.seguradora.avaliacao.service ;
 
 import java.util.List;
 
 import javax.validation.Valid;
 
 import br.com.tokiomarine.seguradora.avaliacao.entidade.Estudante;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EstudandeService {
+public interface EstudandeService  {
 
 	List<Estudante> buscarEstudantes();
 
-	void cadastrarEstudante(@Valid Estudante estudante);
+	String cadastrarEstudante(@Valid Estudante estudante);
 
 	Estudante buscarEstudante(long id);
 
-	void atualizarEstudante(@Valid Estudante estudante);
+	void atualizarEstudante(@Valid Estudante estudante,Long id);
+
+	void apagarEstudante(Long id);
 }
