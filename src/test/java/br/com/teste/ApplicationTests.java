@@ -1,4 +1,4 @@
-package br.com.tokiomarine.seguradora.avaliacao;
+package br.com.teste;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

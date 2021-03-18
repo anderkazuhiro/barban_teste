@@ -1,4 +1,4 @@
-package br.com.tokiomarine.seguradora.avaliacao.Error;
+package br.com.teste.Error;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
